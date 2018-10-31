@@ -31,6 +31,7 @@ section {
 
 /* Typographic Styles */
 address article,
+article,
 aside,
 blockquote,
 body,
@@ -50,7 +51,6 @@ h4,
 h5,
 h6,
 header,
-html,
 img,
 li,
 main,
@@ -62,8 +62,6 @@ span,
 ul {
     background: transparent;
     font-size: 100%;
-    margin: 0%;
-    padding: 0%;
     vertical-align: baseline;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

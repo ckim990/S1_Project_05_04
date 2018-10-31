@@ -13,6 +13,23 @@
    Supporting Files: 
 
 */
+html {
+    color: #222;
+    font-size: 1em;
+}
+
+body {
+    margin: auto;
+	width: 960px;
+}
+
+body h1{
+    padding-left: 2.5%;
+    padding-top: 1%;
+    color: rgb(84, 204, 37);
+    font-family: 'Raleway', sans-serif;
+}
+
 /* nav */
 .dropdown {
     position: relative;
@@ -35,13 +52,31 @@
     display: block;
 }
 
+p, article{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2vw;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    border: rgb(84, 204, 37) 4px solid;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 0 10px black;
+    display: block;
+    line-height: 20px;
+}
+
+article {
+    line-height: 30px;
+}
+
 nav {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     filter: drop-shadow(0 0 100px black);
     margin: 0, auto;
-
+    padding-top: 20px;
 }
 
 header > nav {
@@ -61,13 +96,30 @@ header>nav>ul>li {
 
 nav a {
     margin: 5px 2px;
-    padding: 10px 5px;
+    padding: 13px 15px;
     background-color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    color: rgb(37, 179, 204);
+    color: rgb(84, 204, 37);
     font-size: 15px;
     vertical-align: middle;
-    border: rgba(37, 179, 204, 0.85) .75px solid;
+    border: rgba(84, 204, 37, 0.85) .75px solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+li a:hover {
+    transition: .1s;
+    color: rgb(84, 204, 37);
+    border: rgba(84, 204, 37, 0.85) .75px solid;
     border-radius: 15px;
     transition: 0.3s;
+}
+
+body>header>img {
+	display: block;
+	width: 100%;
+}
+
+textarea {
+    resize: vertical;
 }
