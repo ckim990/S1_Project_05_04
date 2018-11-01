@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 3
@@ -13,24 +13,28 @@
    Supporting Files: 
 
 */
-html {
+/* I learned and utilized gradient features. */
+ html {
     color: #222;
     font-size: 1em;
+    background: #003973;
+    background: -webkit-linear-gradient(to right, rgba(33, 141, 29, 0.644), #114105bd); 
+    background: linear-gradient(to right, rgba(33, 141, 29, 0.644), #114105bd); 
 }
 
 body {
     margin: auto;
 	width: 960px;
 }
-
-body h1{
+/* I imported a special font. */
+body h1  {
     padding-left: 2.5%;
     padding-top: 1%;
-    color: rgb(84, 204, 37);
+    color: rgb(73, 73, 73);
     font-family: 'Raleway', sans-serif;
 }
 
-/* nav */
+/* nav dropdown code */
 .dropdown {
     position: relative;
     /* display: inline-block; */
@@ -43,33 +47,39 @@ body h1{
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px black;
-    padding: 12px 16px;
+    padding: 12px 20px;
     z-index: 1;
     transition: 0.3s;
+    
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+li {
+    padding: 20px 16px;
+}
+/* These are the specifications that I used for most of the project. The things that stand out are the  */
 p, article{
     max-width: 1200px;
     margin: 0 auto;
     padding: 2vw;
-    font-family: 'Open Sans', sans-serif;
     background-color: black;
-    border: rgb(84, 204, 37) 4px solid;
+    border: rgb(84, 204, 37) 2px solid;
     border-radius: 5px;
-    color: black;
+    color: rgb(73, 73, 73);
     box-shadow: 0 0 10px black;
     display: block;
     line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-family: 'Raleway', sans-serif;
 }
 
 article {
     line-height: 30px;
 }
-
+/* I made the columns equal amounts of distance away from eachother. */
 nav {
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -77,8 +87,9 @@ nav {
     filter: drop-shadow(0 0 100px black);
     margin: 0, auto;
     padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
 }
-
+/* Displayed the nav as a table. */
 header > nav {
     display: table;
     width: 100%;
@@ -89,17 +100,17 @@ header > nav > ul {
 	list-style-type: none;
 }
 
-header>nav>ul>li {
+header > nav > ul > li {
 	display: table-cell;
-	text-align: center;
+    text-align: center;
 }
-
+/* I used a slight variation of the styles from the p tag styles. */
 nav a {
-    margin: 5px 2px;
-    padding: 13px 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    margin: 6px -3px;
+    padding: 13px 5px;
+    background-color: rgba(255, 255, 255, 0.61);
     text-decoration: none;
-    color: rgb(84, 204, 37);
+    color: rgb(54, 143, 19);
     font-size: 15px;
     vertical-align: middle;
     border: rgba(84, 204, 37, 0.85) .75px solid;
@@ -109,17 +120,57 @@ nav a {
 
 li a:hover {
     transition: .1s;
-    color: rgb(84, 204, 37);
+    color: rgb(54, 143, 19);
     border: rgba(84, 204, 37, 0.85) .75px solid;
-    border-radius: 15px;
+    border-radius: 12px;
     transition: 0.3s;
 }
+/* I made the stories a 9x9 grid format */
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 
-body>header>img {
-	display: block;
-	width: 100%;
+  }
+  /* I used the same specifications as the p selector styles. */
+  .box {
+    background-color: #444;
+    max-width: 1200px;
+    margin: 5px;
+    padding: 2vw;
+    background-color: black;
+    border: rgb(84, 204, 37) 2px solid;
+    border-radius: 5px;
+    color: rgb(73, 73, 73);
+    box-shadow: 0 0 10px black;
+    display: grid;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-family: 'Raleway', sans-serif;
+  }
+/* These are specifications for the top image */
+body > header > img {
+	display: inline-block;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    margin-top: 1em;
+}
+/* These are the specifications for the Blake photo. I floated the image to the right and added a drop shadow. */
+html > body > header > p > img {
+    display: block;
+    width: 10%;
+    float: right;
+    margin-bottom: 3px;
+    box-shadow: 0 0 10px black;
 }
 
 textarea {
     resize: vertical;
+}
+/* The footer has a simple style but a font and a text align style. */
+footer {
+    padding-top: 1em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
