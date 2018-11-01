@@ -160,7 +160,8 @@ html > body > header > p > img {
     display: block;
     width: 10%;
     float: right;
-    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-bottom: 6px;
     box-shadow: 0 0 10px black;
 }
 
